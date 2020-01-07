@@ -1,8 +1,8 @@
 {
-  "name": "gatsby-starter-stellar",
-  "description": "Gatsby Starter - Stellar by HTML5 UP",
-  "version": "1.0.0",
-  "author": "Hunter Chang",
+  "name": "blue-kestrel",
+  "description": "Simple car rental static website",
+  "version": "0.0.1",
+  "author": "Nadeem Ramsing",
   "dependencies": {
     "gatsby": "^2.15.14",
     "gatsby-plugin-manifest": "^2.2.16",
@@ -32,6 +32,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/nadeemramsing/blue-kestrel.git"
   }
 }
