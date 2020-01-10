@@ -4,7 +4,7 @@ import Helmet from 'react-helmet'
 import { Waypoint } from 'react-waypoint'
 import pic01 from '../assets/images/pic01.jpg'
 import Header from '../components/Header'
-import Layout from '../components/layout'
+import Template from '../components/Template'
 import Nav from '../components/Nav'
 
 class Index extends React.Component {
@@ -25,7 +25,7 @@ class Index extends React.Component {
 
   render() {
     return (
-      <Layout>
+      <Template>
         <Helmet title="Gatsby Starter - Stellar" />
 
         <Header />
@@ -183,7 +183,7 @@ class Index extends React.Component {
             </footer>
           </section>
         </div>
-      </Layout>
+      </Template>
     )
   }
 }
