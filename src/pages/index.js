@@ -26,7 +26,7 @@ class Index extends React.PureComponent {
   render() {
     return (
       <Template>
-        <Helmet title="Gatsby Starter - Stellar" />
+        <Helmet title="Blue Kestrel" />
 
         <Header />
 
