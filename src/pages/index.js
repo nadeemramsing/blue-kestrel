@@ -7,7 +7,7 @@ import Header from '../components/Header'
 import Template from '../components/Template'
 import Nav from '../components/Nav'
 
-class Index extends React.Component {
+class Index extends React.PureComponent {
   constructor(props) {
     super(props)
     this.state = {
@@ -34,6 +34,7 @@ class Index extends React.Component {
           onEnter={this._handleWaypointEnter}
           onLeave={this._handleWaypointLeave}
         ></Waypoint>
+
         <Nav sticky={this.state.stickyNav} />
 
         <div id="main">

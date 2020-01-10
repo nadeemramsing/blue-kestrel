@@ -2,9 +2,9 @@ import smoothscroll from 'smoothscroll-polyfill';
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Element = (props) => { return ( props.children ); };
+const Element = (props) => { return (props.children); };
 
-class Scroll extends React.Component {
+class Scroll extends React.PureComponent {
     static propTypes = {
         type: PropTypes.string,
         element: PropTypes.string,
@@ -37,7 +37,7 @@ class Scroll extends React.Component {
                 default:
             }
         }
-        scroll ? ( this.scrollTo(elem, offset, timeout) ) : console.log(`Element not found: ${element}`); // eslint-disable-line
+        scroll ? (this.scrollTo(elem, offset, timeout)) : console.log(`Element not found: ${element}`); // eslint-disable-line
     }
     scrollTo(element, offSet = 0, timeout = null) {
         const elemPos = element ? element.getBoundingClientRect().top + window.pageYOffset : 0;
@@ -50,11 +50,10 @@ class Scroll extends React.Component {
     render() {
         return (
             <Element>
-                {typeof(this.props.children) === 'object' ? (
-                    React.cloneElement(this.props.children, { onClick: this.handleClick })
-                ) : (
-                    <span onClick={this.handleClick}>{this.props.children}</span>
-                )}
+                {typeof (this.props.children) === 'object' ?
+                    (React.cloneElement(this.props.children, { onClick: this.handleClick }))
+                    :
+                    (<span onClick={this.handleClick}>{this.props.children}</span>)}
             </Element>
         );
     }

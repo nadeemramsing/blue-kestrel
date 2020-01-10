@@ -5,7 +5,7 @@ import Template from '../components/Template'
 import HeaderGeneric from '../components/HeaderGeneric'
 import pic04 from '../assets/images/pic04.jpg'
 
-class Generic extends React.Component {
+class Generic extends React.PureComponent {
   render() {
 
     return (
